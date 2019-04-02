@@ -96,12 +96,14 @@ lastNameM = runners.filter(function(currentValue) {
 });
 console.log(lastNameM);
 // Problem 2
+// change all .edu to .com
 let EduToCom = [];
 EduToCom = runners.map(function(currentValue) {
   return currentValue.email.replace(".edu", ".com");
 });
 console.log(EduToCom);
 // Problem 3
+// add 1000 to donations for students with .edu emails
 let eduDonationIncrease = [];
 runners.forEach(function(currentValue) {
   if(currentValue.email.includes('.edu') === true) {
