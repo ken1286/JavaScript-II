@@ -97,8 +97,21 @@ function contains(item, list, cb) {
 
 /* STRETCH PROBLEM */
 
-// function removeDuplicates(array, cb) {
-//   // removeDuplicates removes all duplicate values from the given array.
-//   // Pass the duplicate free array to the callback function.
-//   // Do not mutate the original array.
-// }
+function removeDuplicates(array, cb) {
+// removeDuplicates removes all duplicate values from the given array.
+// Pass the duplicate free array to the callback function.
+// Do not mutate the original array.
+  return cb(array);
+}
+
+const noDupsArray = function(arr) {
+  return arr.filter(function(currentValue, index) {
+    return arr.indexOf(currentValue) === index;
+  });
+}
+
+const items2 = ['Pencil', 'Pencil', 'Notebook', 'yo-yo', 'Gum', 'Notebook', 'yo-yo', 'Gum'];
+const uniqueArray = removeDuplicates(items2, noDupsArray);
+console.log(uniqueArray);
+
+// The indexOf() method returns the index within the calling String object of the first occurrence of the specified value, starting the search at fromIndex. Returns -1 if the value is not found.

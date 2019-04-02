@@ -2,10 +2,10 @@
 // Write a simple closure of your own creation.  Keep it simple!
 function greeting() {
   const greetString = 'Hello!';
-  debugger;
+  // debugger;
   function sayGreet() {
     console.log(greetString);
-    debugger;
+  // debugger;
   }
   sayGreet();
 }
